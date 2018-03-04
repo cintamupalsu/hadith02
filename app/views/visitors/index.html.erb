@@ -1,0 +1,23 @@
+<% if user_signed_in? %>
+
+  <div class="row">
+    <section class="col-xs-3">
+      left side
+    </section>
+    <section class="col-xs-6">
+      middle side
+    </section>
+    <section class="col-xs-3">
+      right side
+    </section>
+  </div>
+
+<% else %>
+  <div class="container">
+    <div class="jumbotron">
+          <h2>Welcome to myHadith</h2>
+          <h3> Introduction </h3>
+          <%= link_to "Sign up now", new_user_registration_path %>
+    </div>
+  </div>
+<% end %>
